@@ -8,20 +8,20 @@ public class Solution {
         int N = Integer.parseInt(br.readLine());
         char[][] board = new char[N][N];
         for(int i=0;i<board.length;++i) Arrays.fill(board[i],empty);
-        if(placeNQueens(board,N)){
+        if(placeNQueens(board,0,N)){
             printBoard(board);
         }else{
             System.out.println("No solution found");
         }
     }
 
-    private static boolean placeNQueens(char[][] board,int N){
+    private static boolean placeNQueens(char[][] board,int row,int N){
         if(N == 0) return true;
-        for(int i=0;i<board.length;++i){
+        for(int i=row;i<board.length;++i){
             for(int j=0;j<board.length;++j){
                 if(verticalClear(board,j) && horizontalClear(board,i) && diagonalLeftClear(board,i,j) && diagonalRightClear(board,i,j)){
                     board[i][j] = queen;
-                    if(placeNQueens(board,N-1)){
+                    if(placeNQueens(board,i+1,N-1)){
                         return true;
                     }
                     board[i][j] = empty;
