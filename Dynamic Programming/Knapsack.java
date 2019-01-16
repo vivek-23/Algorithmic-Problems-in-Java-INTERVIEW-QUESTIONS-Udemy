@@ -2,7 +2,13 @@
 
 Input:
 
-The first line of input contains an integer T denoting the number of test cases. Then T test cases follow. Each test case consists of four lines. The first line consists of N the number of items. The second line consists of W, the maximum capacity of the knapsack. In the next  line are N space separated positive integers denoting the values of the N items and in the fourth line are N space separated positive integers denoting the weights of the corresponding items.
+The first line of input contains an integer T denoting the number of test cases. 
+Then T test cases follow. Each test case consists of four lines. 
+The first line consists of N the number of items. 
+The second line consists of W, the maximum capacity of the knapsack. 
+In the next  line are N space separated positive integers denoting the 
+values of the N items and in the fourth line are N space separated positive 
+integers denoting the weights of the corresponding items.
 
 For example:
 
@@ -12,6 +18,8 @@ For example:
 1 2 3
 4 5 1
 
+Output:
+3
 
 */
 
