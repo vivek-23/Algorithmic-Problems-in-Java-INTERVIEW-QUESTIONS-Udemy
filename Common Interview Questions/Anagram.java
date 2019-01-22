@@ -10,7 +10,7 @@ public class Anagram {
 
     private static boolean isAnagram(String s1,String s2){
         if(s1.length() != s2.length()) return false;
-        int[] hash = new int[255];
+        int[] hash = new int[256];
         for(int i=0;i<s1.length();++i){
             hash[(int)s1.charAt(i)]++;
             hash[(int)s2.charAt(i)]--;
